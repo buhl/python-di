@@ -4,21 +4,21 @@ di - Python Dependency Injection
 
 What?
 -----
-di.DependencyInjector is a python class with wich you can register dependencies and later wrap/decorate functions and methods.
+**di.DependencyInjector** is a python class with which you can register dependencies and later wrap/decorate functions and methods.
 python-di's home is on https://github.com/buhl/python-di
 
 
 Why?
 ----
-Dependency injection was the new black some months/years ago. So it's time I got around to understand the conceps. At the momment I am deep into Python and loving it so I used it to play around with DI.
+Dependency Injection was the new black some months/years ago. So it's time I got around to understand the concepts. At the momment, I am deep into Python and loving it, so I used it to play around with DI.
 
-Personally I haven't used this module yet. But I can see a couple of places it might be usefull. For now I will let it mature a bit - perhabs with help from you?
+Personally, I haven't used this module yet. But I can see a couple of places it might be useful. For now I will let it mature a bit - perhabs with help from you?
 
 
 Features
 --------
-- Wrap function/method and resolve dependencies when called
-- look for dependencies in the di object and function/methods globals() if activated
+- Wraps function/method and resolves dependencies when called
+- Looks for dependencies in the di object and function/methods globals() if activated
 
 
 Quick start
@@ -56,7 +56,7 @@ Wrap function and call it:
     assert calc_sum([1,2,3,4]) == 10  # True
 
 
-Searching in globals:
+Search in globals:
 
 .. code-block:: python
 
@@ -79,4 +79,4 @@ Uninstall (why would you??):
 
 Contributing
 ------------
-Contributions are more than welcome. I would also love to know how you are/will use this module.
+Contributions are more than welcome. I would also love to know how you are using this module.

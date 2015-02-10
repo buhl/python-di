@@ -22,7 +22,7 @@ def version():
     return version
 
 def email(me):
-    return "{}@{}.{}".format("".join([s[0].lower() for s in me.split(" ")]), "arendal", "dk")
+    return "{}(AT){}(DOT){}".format("".join([s[0].lower() for s in me.split(" ")]), "arendal", "dk")
 
 
 setup(
