@@ -31,6 +31,7 @@ Install:
 Import class and initialize:
 
 .. code-block:: python
+
     from di import DependencyInjector
     di = DependencyInjector()
 
@@ -38,10 +39,13 @@ Import class and initialize:
 Register dependencies:
 
 .. code-block:: python
+
     di.register_dependency('sum_list_of_ints', sum)
 
 Wrap function and call it:
+
 .. code-block:: python
+
     @di
     def calc_sum(list_of_ints, sum_list_of_ints):
         return sum_list_of_ints(list_of_ints)
@@ -52,6 +56,7 @@ Wrap function and call it:
 Searching in globals:
 
 .. code-block:: python
+
     @di(globals_lookup=True)
     def calc_sum2(list_of_ints, sum_list_of_ints):
         return sum_list_of_ints(list_of_ints)
