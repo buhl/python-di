@@ -72,7 +72,9 @@ Searching in globals:
 Uninstall (why would you??):
 
 .. code-block:: console
+
     $ pip uninstall python-di
+
 
 
 Contributing
