@@ -37,6 +37,11 @@ class DependencyInjector(object):
 
         return di
 
+    def __getattr__(self, attr):
+        if attr in self.dependencies:
+            return self.dependencies[attr]
+        raise NameError("dependancy name '{}' is not defined".format(attr))
+
     def _get_globals(self, f):
         if not self.globals_lookup:
             return {}
@@ -58,7 +63,6 @@ class DependencyInjector(object):
         namespace = self._get_globals(f)
 
         for key in signature.parameters:
-
             if key in self.dependencies:
                 kwargs[key] = self.dependencies[key]
             elif key in namespace:
