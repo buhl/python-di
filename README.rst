@@ -26,7 +26,9 @@ Quick start
 Install:
 
 .. code-block:: console
+
     $ pip install https://github.com/buhl/python-di/archive/master.zip
+
 
 Import class and initialize:
 
@@ -41,6 +43,7 @@ Register dependencies:
 .. code-block:: python
 
     di.register_dependency('sum_list_of_ints', sum)
+
 
 Wrap function and call it:
 
@@ -64,6 +67,12 @@ Searching in globals:
     list_of_ints = [1,2,3,4]
 
     assert calc_sum2() == 10  # True
+
+
+Uninstall (why would you??):
+
+.. code-block:: console
+    $ pip uninstall python-di
 
 
 Contributing
